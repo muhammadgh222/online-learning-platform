@@ -1,15 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ES6", // Ensure ES6+ output
-    "module": "ESNext", // Use ES Modules
-    "outDir": "./dist", // Output directory for compiled files
-    "rootDir": "./src", // Source directory
-    "esModuleInterop": true, // Allows for default imports from modules that don't have a default export
-    "strict": true, // Enables strict type checking
-    "skipLibCheck": true, // Skip type checking of declaration files
-    "forceConsistentCasingInFileNames": true // Enforces case-sensitivity in file names
+    "target": "ES6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "strictPropertyInitialization": false
   },
-  "include": [
-    "src/**/*.ts" // Include all TypeScript files in the src directory
-  ]
+  "include": ["src/**/*.ts"]
 }
